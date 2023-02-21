@@ -1,8 +1,7 @@
 # About
-[![Angular GitHub CI/CD](https://github.com/seanmcnamee/About/actions/workflows/cd.yaml/badge.svg)](https://github.com/seanmcnamee/About/actions/workflows/cd.yaml)
-[![pages-build-deployment](https://github.com/seanmcnamee/About/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/seanmcnamee/About/actions/workflows/pages/pages-build-deployment)
+[![Angular GitHub CI/CD](https://github.com/nickforg2/About/actions/workflows/cd.yaml/badge.svg)](https://github.com/nickforg2/About/actions/workflows/cd.yaml)
 
-Website available at [https://seanmcnamee.github.io/About/](https://seanmcnamee.github.io/About/)
+Website available at [https://nickforg2.github.io/About/](https://nickforg2.github.io/About/)
 
 
 ## Development
@@ -27,22 +26,3 @@ Website available at [https://seanmcnamee.github.io/About/](https://seanmcnamee.
    - Ensure that `npm run e2e:ci` passes
 - Push development branch
 - Go through PR process in GitHub
-
-
-## Template Usage
-
-- Create new repo based on this Template repo
-- Replace all mentions of `About` with your repo name
-- Replace all mentions of `about` with your repo name
-      - Notice that a capital letter is equivalent to a hyphen then the lowercase letter variant
-- Replace the defined email with yours in `package.json`
-- Create Access Token (for public repos)
-    - User Settings > Developer Settings > Personal access tokens > Generate new token
-	    - Select all repo scopes
-	    - Generate token
-	    - Copy value
-- Add Secret to repo
-    - Settings > Secrets > Actions > New repository secret
-        - Paste value from personal access token
-	    - Name: SEAN_ACCESS_TOKEN
-        - A different name would require `.github\workflows\cd.yaml` to be updated 

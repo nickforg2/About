@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularBootstrapTemplate": {
+    "About": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-bootstrap-template",
+            "outputPath": "dist/about",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AngularBootstrapTemplate:build:production"
+              "browserTarget": "About:build:production"
             },
             "development": {
-              "browserTarget": "AngularBootstrapTemplate:build:development"
+              "browserTarget": "About:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularBootstrapTemplate:build"
+            "browserTarget": "About:build"
           }
         },
         "test": {
@@ -116,11 +116,11 @@
         "cypress-run": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "AngularBootstrapTemplate:serve"
+            "devServerTarget": "About:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AngularBootstrapTemplate:serve:production"
+              "devServerTarget": "About:serve:production"
             }
           }
         },
@@ -134,27 +134,27 @@
         "ct": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "AngularBootstrapTemplate:serve",
+            "devServerTarget": "About:serve",
             "watch": true,
             "headless": false,
             "testingType": "component"
           },
           "configurations": {
             "development": {
-              "devServerTarget": "AngularBootstrapTemplate:serve:development"
+              "devServerTarget": "About:serve:development"
             }
           }
         },
         "e2e": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "AngularBootstrapTemplate:serve",
+            "devServerTarget": "About:serve",
             "watch": true,
             "headless": false
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AngularBootstrapTemplate:serve:production"
+              "devServerTarget": "About:serve:production"
             }
           }
         },
